@@ -1,4 +1,4 @@
-'use strict'
+'use strict';
 
 console.log("Be Kind")
 
@@ -13,8 +13,8 @@ life has just begun, On the beach, we're having fun, Pickleball at dawn,
 travel 'til we're gone, This is how we run, this is life we love!
 */
 
-// the repetitive refrain
-function printedSong(){
+// the print the song 
+function printedSong() {
     console.log("Underneath the golden sun,");
     console.log("Waves are crashing, everyone,");
     console.log("Tacos in the sun, life has just begun,");
@@ -31,16 +31,16 @@ function printedSong(){
 }
 
 //Refactored refrain
- function refactoredRefrain(){
-    return( 
-        "Tacos in the sun, life has just begun,\n"+
-        "On the beach, we're having fun,\n"+
-        "Pickleball at dawn, travel 'til we're gone,\n"+
-        "This is how we run, this is life we love!"
-    );
- }
-//Refactored song unsing the refrain
-function refactoredSong(){
+function refactoredRefrain() {
+    return (
+        "Tacos in the sun, life has just begun,\n" +
+        "On the beach, we're having fun,\n" +
+        "Pickleball at dawn, travel 'til we're gone,\n" +
+        "This is how we run, this is life we love!");
+}
+
+//Refactored function
+function refactoredSong() {
     console.log("Underneath the golden sun,");
     console.log("Waves are crashing, everyone,");
     console.log(refactoredRefrain());
@@ -51,28 +51,28 @@ function refactoredSong(){
 }
 
 //call the functions
-console.log("Origianl Song:");
-printedSong ();
+console.log("Original Song:");
+printedSong();
 console.log("\nRefactored Song");
 refactoredSong();
 
 
-function refrain(){
+function refrain() {
 
     //declare, contains the repeated lyrics as seperated console.log statments.
-   console.log("Tacos in the sun, life has just begun");
-   console.log("On the beach, we're having fun");
-   console.log("Pickleball at dawn, travel 'til we're gone");
-   console.log("This is how we run, this is life we love!");
+    console.log("Tacos in the sun, life has just begun");
+    console.log("On the beach, we're having fun");
+    console.log("Pickleball at dawn, travel 'til we're gone");
+    console.log("This is how we run, this is life we love!");
 
 }
 
-function song(){
-// call the refrain function wherever the repeated lines appear.
-   
+function song() {
+    // call the refrain function wherever the repeated lines appear.
+
 }
 
-function song(){
+function song() {
     console.log("Underneath the golden sun,");
     console.log("Waves are crashing, everyone,");
 
@@ -84,4 +84,4 @@ function song(){
 }
 song();
 
-
+//
