@@ -1,6 +1,6 @@
 'use strict'
 
-console.log("Cheers")
+console.log("Be Kind")
 
 /* the title of the song: Life's adventure
 
@@ -12,6 +12,50 @@ Life's adventure never dies, Tacos in the sun,
 life has just begun, On the beach, we're having fun, Pickleball at dawn, 
 travel 'til we're gone, This is how we run, this is life we love!
 */
+
+// the repetitive refrain
+function printedSong(){
+    console.log("Underneath the golden sun,");
+    console.log("Waves are crashing, everyone,");
+    console.log("Tacos in the sun, life has just begun,");
+    console.log("On the beach, we're having fun,");
+    console.log("Pickleball at dawn, travel'till we're gone,");
+    console.log("This is how we run, this is life we love!");
+    console.log("Journey far and roam the skies,");
+    console.log("Life's adventure never dies,");
+    console.log("Tacos in the sun, life has just begun,");
+    console.log("On the beach, we're having fun");
+    console.log("Pickleball at dawn, travel'till we're gone,");
+    console.log("This is how we run, this is life we love");
+
+}
+
+//Refactored refrain
+ function refactoredRefrain(){
+    return( 
+        "Tacos in the sun, life has just begun,\n"+
+        "On the beach, we're having fun,\n"+
+        "Pickleball at dawn, travel 'til we're gone,\n"+
+        "This is how we run, this is life we love!"
+    );
+ }
+//Refactored song unsing the refrain
+function refactoredSong(){
+    console.log("Underneath the golden sun,");
+    console.log("Waves are crashing, everyone,");
+    console.log(refactoredRefrain());
+    console.log("Journey far and roam the skies,");
+    console.log("Life's adventure never dies,");
+    console.log(refactoredRefrain());
+
+}
+
+//call the functions
+console.log("Origianl Song:");
+printedSong ();
+console.log("\nRefactored Song");
+refactoredSong();
+
 
 function refrain(){
 
@@ -27,4 +71,17 @@ function song(){
 // call the refrain function wherever the repeated lines appear.
    
 }
+
+function song(){
+    console.log("Underneath the golden sun,");
+    console.log("Waves are crashing, everyone,");
+
+    refrain();
+    console.log("Journey far and roam the skies,");
+    console.log("Life's adventure never dies,");
+    refrain();
+
+}
+song();
+
 
